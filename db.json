@@ -20,7 +20,7 @@
       "name": "Berliner Weisse With Yuzu - B-Sides",
       "tagline": "Japanese Citrus Berliner Weisse.",
       "first_brewed": "11/2015",
-      "description": "Japanese citrus fruit intensifies the sour nature of this German classic.",
+      "description": "really??",
       "image_url": "https://images.punkapi.com/v2/keg.png",
       "food_pairing": [
         "Smoked chicken wings",
@@ -46,19 +46,8 @@
       "contributed_by": "Ali Skinner <AliSkinner>"
     },
     {
-      "id": 5,
-      "name": "Avery Brown Dredge",
-      "tagline": "Bloggers' Imperial Pilsner.",
-      "first_brewed": "02/2011",
-      "description": "wow so good!",
-      "image_url": "https://images.punkapi.com/v2/5.png",
-      "food_pairing": [
-        "Vietnamese squid salad",
-        "Chargrilled corn on the cob with paprika butter",
-        "Strawberry and rhubarb pie"
-      ],
-      "brewers_tips": "Make sure you have a big enough yeast starter to ferment through the OG and lager successfully.",
-      "contributed_by": "Sam Mason <samjbmason>"
+      "description": "But is it, though",
+      "id": 5
     },
     {
       "id": 6,
@@ -110,7 +99,7 @@
       "name": "Bramling X",
       "tagline": "Single Hop IPA Series - 2011.",
       "first_brewed": "01/2011",
-      "description": "Good old Bramling Cross is elegant, refined, assured, (boring) and understated. Understated that is unless you hop the living daylights out of a beer with it. This is Bramling Cross re-invented and re-imagined, and shows just what can be done with English hops if you use enough of them. Poor Bramling Cross normally gets lost in a woeful stream of conformist brown ales made by sleepy cask ale brewers. But not anymore. This beer shows that British hops do have some soul, and is a fruity riot of blackberries, pears, and plums. Reminds me of the bramble, apple and ginger jam my grandmother used to make.",
+      "description": "please lord dont break this one...",
       "image_url": "https://images.punkapi.com/v2/10.png",
       "food_pairing": [
         "Warm blackberry pie",
@@ -257,19 +246,8 @@
       "contributed_by": "Sam Mason <samjbmason>"
     },
     {
-      "id": 19,
-      "name": "Rabiator",
-      "tagline": "Imperial Wheat Beer",
-      "first_brewed": "03/2011",
-      "description": "Imperial Wheat beer / Weizenbock brewed by a homesick German in leather trousers. Think banana bread, bubble gum and David Hasselhoff.",
-      "image_url": "https://images.punkapi.com/v2/keg.png",
-      "food_pairing": [
-        "Grilled portabello mushroom burger",
-        "Chicken sausages with creamy mash",
-        "Caramel and banana meringue pie"
-      ],
-      "brewers_tips": "If you are struggling to get that authentic head retention increase your mash temperature to about 70°C.",
-      "contributed_by": "Sam Mason <samjbmason>"
+      "description": "Hope this doesnt break it",
+      "id": 19
     },
     {
       "id": 20,
@@ -336,7 +314,7 @@
       "name": "Bad Pixie",
       "tagline": "Spiced Wheat Beer.",
       "first_brewed": "10/2008",
-      "description": "2008 Prototype beer, a 4.7% wheat ale with crushed juniper berries and citrus peel.",
+      "description": "i havent drank in 6 months and im starting to lose it, maaan",
       "image_url": "https://images.punkapi.com/v2/25.png",
       "food_pairing": [
         "Poached sole fillet with capers",
