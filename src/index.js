@@ -105,32 +105,49 @@ document.addEventListener("DOMContentLoaded", function(evenet){
 	// 	})
 	// }
 
-	beerDetail.addEventListener("click", function(event){
-		if (event.target.tagName === "BUTTON"){
-			const editField = document.querySelector("#edit-field")
-			let newDescription = editField.value
+	// beerDetail.addEventListener("click", function(event){
+	// 	if (event.target.tagName === "BUTTON"){
+	// 		const editField = document.querySelector("textarea")
+	// 		let newDescription = editField.value
 
-			editField.innerHTML += newDescription
+	// 		editField.innerHTML += newDescription
+	// 		console.log(event.target.dataset.id)
+	// 		return fetch(`beerURL/event.target.dataset.id`, {
+	// 			method: 'PATCH',
+	// 			headers: {
+	// 				'Content-Type': 'application/json',
+	// 				'Accept': 'application/json'
+	// 			},
+	// 			body: JSON.stringify({
+	// 				'description': newDescription
+	// 			}).then ((response) => {
+	// 				return response.json()
+	// 			}).then((beer) => {
+	// 				editField.innerHTML = beer.description
+	// 			})
+	// 		})
 
-			return fetch(`beerURL/event.target.dataset.id`, {
-				method: 'PATCH',
-				headers: {
-					'Content-Type': 'application/json',
-					'Accept': 'application/json'
-				},
-				body: JSON.stringify({
-					description: newDescription
-				}).then ((response) => {
-					return response.json()
-				}).then((beer) => {
-					editField.innerHTML = beer.description
-				})
-			})
+	// 	}
 
-		}
-
-	})
-
+	// })
+	beerDetail.addEventListener('click', event => {
+    const button = document.querySelector('#edit-beer')
+    const newDescription = document.querySelector('textarea').value
+  
+    if (event.target === button) {
+      fetch(`http://localhost:3000/beers/${event.target.dataset.id}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json',
+          'Accept': 'application/json' },
+          body: JSON.stringify({
+            'description': newDescription
+          })
+        })
+        .then(response => response.json())
+        .then(response => { newDescription.innerText = response.description
+        })
+    }
+  })
 
 
 })
