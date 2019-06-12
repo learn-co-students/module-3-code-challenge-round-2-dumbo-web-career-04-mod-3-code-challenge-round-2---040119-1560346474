@@ -7,16 +7,26 @@ document.addEventListener("DOMContentLoaded", () => {
   let editButton;
 
   const beerInfo = (beer) => {
-    return beerDetails.innerHTML += `
+    let foodPairings = beer.food_pairing
+    beerDetails.innerHTML += `
     <h1>${beer.name}</h1>
     <h5> First Brewed: ${beer.first_brewed} </h5>
     <img src=${beer.image_url}>
     <h3>${beer.tagline}</h3>
+    <h4> Food Pairings: </h4>
+    <ul data-pair-id="${beer.id}"></ul>
     <textarea>${beer.description}</textarea>
     <button id="edit-beer" class="btn btn-info">
     Save
     </button>
     `
+    let pairsUl = beerDetails.querySelector(`ul[data-pair-id="${beer.id}"]`)
+    foodPairings.forEach(pair => {
+      let newPairLi = document.createElement("li")
+      newPairLi.innerText = pair
+      pairsUl.append(newPairLi)
+    })
+    return beerDetails
   }
 
   const populateDomWithBeer = (beer) => {
