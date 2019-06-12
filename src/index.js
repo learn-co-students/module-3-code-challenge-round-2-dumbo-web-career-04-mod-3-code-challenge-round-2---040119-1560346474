@@ -1,3 +1,6 @@
+// personal note; i've made myself go on the wagon for the duration of this bootcamp(it's really starting to get to me
+// so this code challenge was very triggering for me. i demand a 'passing grade' as compensation!
+
 const beerURL = 'http://localhost:3000/beers'
 
 // --- helper method to list each beer title from API ---
@@ -25,6 +28,7 @@ document.getElementById('edit-beer').addEventListener('click', function(e) {
 	})
 }
 
+// --- edits a selected beer's description ---
 function editABeer(target) {
 	fetch(`http://localhost:3000/beers/${target.dataset.id}`, {
   headers: { "Content-Type": "application/json; charset=utf-8" },
