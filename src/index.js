@@ -47,7 +47,6 @@ ulTag.addEventListener('click', (e) => {
 })
 
 //Update beer details with save button
-
 detailDivTag.addEventListener('click', (e) => {
 
   e.preventDefault()
@@ -67,11 +66,7 @@ detailDivTag.addEventListener('click', (e) => {
     .then(res => res.json())
     .then(beer => {
       textareaTag.innerHTML = beer.description
+       console.log(textareaTag.innerHTML)
     })
 
 })
-
-// console.log(e.currentTarget)
-// console.log(textareaTag)
-// console.log(beerDescription)
-// console.log(beerId);
