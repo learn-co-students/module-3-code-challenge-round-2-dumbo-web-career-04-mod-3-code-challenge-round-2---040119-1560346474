@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const beerInfo = (beer) => {
     return beerDetails.innerHTML += `
     <h1>${beer.name}</h1>
+    <h5> First Brewed: ${beer.first_brewed} </h5>
     <img src=${beer.image_url}>
     <h3>${beer.tagline}</h3>
     <textarea>${beer.description}</textarea>
