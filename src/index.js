@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       beerDetailDiv.addEventListener("click", event => {
         const saveButton = document.querySelector("#edit-beer");
         const beerDescription = document.querySelector("textarea").value;
-        const descriptionH3 = event.target.parentElement.querySelector("h3")
 
         if (event.target === saveButton) {
           fetch(`http://localhost:3000/beers/${event.target.dataset.id}`, {
@@ -52,13 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
               'Accept': 'application/json'
             },
             'body': JSON.stringify({
-              'tagline': `${beerDescription}`
+              'description': `${beerDescription}`,
             })
           })
           .then(resp => resp.json())
           .then(resp => {
-            descriptionH3.innerText = resp.description;
-          })
+            beerDescription.innerText = resp.description;
+          });
 
         }
       });

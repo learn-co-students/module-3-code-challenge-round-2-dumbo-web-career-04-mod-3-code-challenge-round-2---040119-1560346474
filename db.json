@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "Buzz",
-      "tagline": "wow much tests",
+      "tagline": "A Real Bitter Experience.",
       "first_brewed": "09/2007",
-      "description": "wow much tests",
+      "description": "hello",
       "image_url": "https://images.punkapi.com/v2/keg.png",
       "food_pairing": [
         "Spicy chicken tikka masala",
@@ -170,7 +170,7 @@
       "name": "Alpha Dog",
       "tagline": "Existential Red Ale.",
       "first_brewed": "02/2010",
-      "description": "test",
+      "description": "A fusion of caramel malt flavours and punchy New Zealand hops. A session beer you can get your teeth into.",
       "image_url": "https://images.punkapi.com/v2/14.png",
       "food_pairing": [
         "Pastrami",
